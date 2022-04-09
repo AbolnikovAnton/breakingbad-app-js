@@ -4,16 +4,18 @@ const EpisodesGrid = ({episods, isLoading}) => {
     return isLoading ?
         <h1 className='ring'>Loading...</h1> :
         <div className="container">
-            <section className="column">
-                <label className="accordion">
-                    <input type='checkbox' name='checkbox-accordion'>
-                        <div className="accordion__header">Episode</div>
+            {episods.map(episode =>
+                <section className="row" key={episode.air_date}>
+                    <label className="accordion">
+                        <input type='checkbox' name='checkbox-accordion'/>
+                        <div className="accordion__header">Episode {episode.season}</div>
                         <div className="accordion__content">
-                            <h6>Скрытый заголовок #1</h6>
-                            <p>Скрытый текст (контент) аккордеона на чекбоксах #1.</p>
+                            <h6>{episode.title}</h6>
                         </div>
-                </label>
-            </section>
+                    </label>
+                </section>
+            )}
+                        {console.log(episods)}
         </div>
 }
 

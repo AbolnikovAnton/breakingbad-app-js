@@ -296,6 +296,13 @@ span:before
         transform:rotate(405deg);
     }
 }
+
+.container {
+    display: table;
+    margin: 0 auto;
+    width: 80%;
+}
+
 .column {
     display: table-cell;
     padding: 0px 10px;
@@ -303,7 +310,7 @@ span:before
 }
 
 h2 {
-    color: #607D8B;
+    color: #294818FF;
     text-align: center;
     margin: 20px 0;
 }
@@ -325,7 +332,7 @@ h2 {
 }
 
 .accordion__header {
-    background-color: #607D8B;
+    background-color: #294818FF;
     border: 1px solid #CFD8DC;
     border-bottom-width: 0px;
     color: #fff;
@@ -364,13 +371,13 @@ h2 {
     width: 2px;
 }
 .accordion input:checked ~ .accordion__header {
-    background: #607D8B;
-    border-color: #607D8B;
+    background: #294818FF;
+    border-color: #294818FF;
     color: white;
 }
 .accordion input:checked ~ .accordion__header:hover {
-    background-color: #607D8B;
-    border-color: #607D8B;
+    background-color: #294818FF;
+    border-color: #294818FF;
     color: white;
 }
 .accordion input:checked ~ .accordion__header:before {
@@ -395,7 +402,7 @@ h2 {
 
 .accordion__content {
     background-color: white;
-    border: 1px solid #607D8B;
+    border: 1px solid #294818FF;
     border-width: 0px 1px;
     display: none;
     padding: 20px;
@@ -408,7 +415,7 @@ h2 {
     border-radius: 0px 0px 4px 4px;
 }
 .accordion__content h6 {
-    color: #607D8B;
+    color: #294818FF;
     font-size: 18px;
     margin-bottom: 5px;
 }
